@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEF5611B2034B3A900EEABB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5611A2034B3A900EEABB1 /* AppDelegate.swift */; };
+		FEF5611D2034B3A900EEABB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5611C2034B3A900EEABB1 /* ViewController.swift */; };
+		FEF561202034B3A900EEABB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF5611E2034B3A900EEABB1 /* Main.storyboard */; };
+		FEF561222034B3A900EEABB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF561212034B3A900EEABB1 /* Assets.xcassets */; };
+		FEF561252034B3A900EEABB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF561232034B3A900EEABB1 /* LaunchScreen.storyboard */; };
+		FEF561302034B3A900EEABB1 /* SMA_MI_NotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5612F2034B3A900EEABB1 /* SMA_MI_NotifyTests.swift */; };
+		FEF5613B2034B3AA00EEABB1 /* SMA_MI_NotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5613A2034B3AA00EEABB1 /* SMA_MI_NotifyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEF5612C2034B3A900EEABB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF5610F2034B3A900EEABB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF561162034B3A900EEABB1;
+			remoteInfo = "SMA MI Notify";
+		};
+		FEF561372034B3AA00EEABB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF5610F2034B3A900EEABB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF561162034B3A900EEABB1;
+			remoteInfo = "SMA MI Notify";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FEF561172034B3A900EEABB1 /* SMA MI Notify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMA MI Notify.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF5611A2034B3A900EEABB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEF5611C2034B3A900EEABB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEF5611F2034B3A900EEABB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEF561212034B3A900EEABB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEF561242034B3A900EEABB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEF561262034B3A900EEABB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF5612B2034B3A900EEABB1 /* SMA MI NotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SMA MI NotifyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF5612F2034B3A900EEABB1 /* SMA_MI_NotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMA_MI_NotifyTests.swift; sourceTree = "<group>"; };
+		FEF561312034B3A900EEABB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF561362034B3AA00EEABB1 /* SMA MI NotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SMA MI NotifyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF5613A2034B3AA00EEABB1 /* SMA_MI_NotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMA_MI_NotifyUITests.swift; sourceTree = "<group>"; };
+		FEF5613C2034B3AA00EEABB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEF561142034B3A900EEABB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF561282034B3A900EEABB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF561332034B3AA00EEABB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEF5610E2034B3A900EEABB1 = {
+			isa = PBXGroup;
+			children = (
+				FEF561192034B3A900EEABB1 /* SMA MI Notify */,
+				FEF5612E2034B3A900EEABB1 /* SMA MI NotifyTests */,
+				FEF561392034B3AA00EEABB1 /* SMA MI NotifyUITests */,
+				FEF561182034B3A900EEABB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEF561182034B3A900EEABB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEF561172034B3A900EEABB1 /* SMA MI Notify.app */,
+				FEF5612B2034B3A900EEABB1 /* SMA MI NotifyTests.xctest */,
+				FEF561362034B3AA00EEABB1 /* SMA MI NotifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEF561192034B3A900EEABB1 /* SMA MI Notify */ = {
+			isa = PBXGroup;
+			children = (
+				FEF5611A2034B3A900EEABB1 /* AppDelegate.swift */,
+				FEF5611C2034B3A900EEABB1 /* ViewController.swift */,
+				FEF5611E2034B3A900EEABB1 /* Main.storyboard */,
+				FEF561212034B3A900EEABB1 /* Assets.xcassets */,
+				FEF561232034B3A900EEABB1 /* LaunchScreen.storyboard */,
+				FEF561262034B3A900EEABB1 /* Info.plist */,
+			);
+			path = "SMA MI Notify";
+			sourceTree = "<group>";
+		};
+		FEF5612E2034B3A900EEABB1 /* SMA MI NotifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEF5612F2034B3A900EEABB1 /* SMA_MI_NotifyTests.swift */,
+				FEF561312034B3A900EEABB1 /* Info.plist */,
+			);
+			path = "SMA MI NotifyTests";
+			sourceTree = "<group>";
+		};
+		FEF561392034B3AA00EEABB1 /* SMA MI NotifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEF5613A2034B3AA00EEABB1 /* SMA_MI_NotifyUITests.swift */,
+				FEF5613C2034B3AA00EEABB1 /* Info.plist */,
+			);
+			path = "SMA MI NotifyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEF561162034B3A900EEABB1 /* SMA MI Notify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF5613F2034B3AA00EEABB1 /* Build configuration list for PBXNativeTarget "SMA MI Notify" */;
+			buildPhases = (
+				FEF561132034B3A900EEABB1 /* Sources */,
+				FEF561142034B3A900EEABB1 /* Frameworks */,
+				FEF561152034B3A900EEABB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SMA MI Notify";
+			productName = "SMA MI Notify";
+			productReference = FEF561172034B3A900EEABB1 /* SMA MI Notify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEF5612A2034B3A900EEABB1 /* SMA MI NotifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF561422034B3AA00EEABB1 /* Build configuration list for PBXNativeTarget "SMA MI NotifyTests" */;
+			buildPhases = (
+				FEF561272034B3A900EEABB1 /* Sources */,
+				FEF561282034B3A900EEABB1 /* Frameworks */,
+				FEF561292034B3A900EEABB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEF5612D2034B3A900EEABB1 /* PBXTargetDependency */,
+			);
+			name = "SMA MI NotifyTests";
+			productName = "SMA MI NotifyTests";
+			productReference = FEF5612B2034B3A900EEABB1 /* SMA MI NotifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEF561352034B3AA00EEABB1 /* SMA MI NotifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF561452034B3AA00EEABB1 /* Build configuration list for PBXNativeTarget "SMA MI NotifyUITests" */;
+			buildPhases = (
+				FEF561322034B3AA00EEABB1 /* Sources */,
+				FEF561332034B3AA00EEABB1 /* Frameworks */,
+				FEF561342034B3AA00EEABB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEF561382034B3AA00EEABB1 /* PBXTargetDependency */,
+			);
+			name = "SMA MI NotifyUITests";
+			productName = "SMA MI NotifyUITests";
+			productReference = FEF561362034B3AA00EEABB1 /* SMA MI NotifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEF5610F2034B3A900EEABB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = SMA;
+				TargetAttributes = {
+					FEF561162034B3A900EEABB1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FEF5612A2034B3A900EEABB1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FEF561162034B3A900EEABB1;
+					};
+					FEF561352034B3AA00EEABB1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FEF561162034B3A900EEABB1;
+					};
+				};
+			};
+			buildConfigurationList = FEF561122034B3A900EEABB1 /* Build configuration list for PBXProject "SMA MI Notify" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEF5610E2034B3A900EEABB1;
+			productRefGroup = FEF561182034B3A900EEABB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEF561162034B3A900EEABB1 /* SMA MI Notify */,
+				FEF5612A2034B3A900EEABB1 /* SMA MI NotifyTests */,
+				FEF561352034B3AA00EEABB1 /* SMA MI NotifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEF561152034B3A900EEABB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF561252034B3A900EEABB1 /* LaunchScreen.storyboard in Resources */,
+				FEF561222034B3A900EEABB1 /* Assets.xcassets in Resources */,
+				FEF561202034B3A900EEABB1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF561292034B3A900EEABB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF561342034B3AA00EEABB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEF561132034B3A900EEABB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF5611D2034B3A900EEABB1 /* ViewController.swift in Sources */,
+				FEF5611B2034B3A900EEABB1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF561272034B3A900EEABB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF561302034B3A900EEABB1 /* SMA_MI_NotifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF561322034B3AA00EEABB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF5613B2034B3AA00EEABB1 /* SMA_MI_NotifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEF5612D2034B3A900EEABB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF561162034B3A900EEABB1 /* SMA MI Notify */;
+			targetProxy = FEF5612C2034B3A900EEABB1 /* PBXContainerItemProxy */;
+		};
+		FEF561382034B3AA00EEABB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF561162034B3A900EEABB1 /* SMA MI Notify */;
+			targetProxy = FEF561372034B3AA00EEABB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEF5611E2034B3A900EEABB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEF5611F2034B3A900EEABB1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEF561232034B3A900EEABB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEF561242034B3A900EEABB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEF5613D2034B3AA00EEABB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEF5613E2034B3AA00EEABB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEF561402034B3AA00EEABB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SMA MI Notify/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sma.us.SMA-MI-Notify";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEF561412034B3AA00EEABB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SMA MI Notify/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sma.us.SMA-MI-Notify";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEF561432034B3AA00EEABB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SMA MI NotifyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sma.us.SMA-MI-NotifyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMA MI Notify.app/SMA MI Notify";
+			};
+			name = Debug;
+		};
+		FEF561442034B3AA00EEABB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SMA MI NotifyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sma.us.SMA-MI-NotifyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMA MI Notify.app/SMA MI Notify";
+			};
+			name = Release;
+		};
+		FEF561462034B3AA00EEABB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SMA MI NotifyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sma.us.SMA-MI-NotifyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SMA MI Notify";
+			};
+			name = Debug;
+		};
+		FEF561472034B3AA00EEABB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SMA MI NotifyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sma.us.SMA-MI-NotifyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SMA MI Notify";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEF561122034B3A900EEABB1 /* Build configuration list for PBXProject "SMA MI Notify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF5613D2034B3AA00EEABB1 /* Debug */,
+				FEF5613E2034B3AA00EEABB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF5613F2034B3AA00EEABB1 /* Build configuration list for PBXNativeTarget "SMA MI Notify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF561402034B3AA00EEABB1 /* Debug */,
+				FEF561412034B3AA00EEABB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF561422034B3AA00EEABB1 /* Build configuration list for PBXNativeTarget "SMA MI NotifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF561432034B3AA00EEABB1 /* Debug */,
+				FEF561442034B3AA00EEABB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF561452034B3AA00EEABB1 /* Build configuration list for PBXNativeTarget "SMA MI NotifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF561462034B3AA00EEABB1 /* Debug */,
+				FEF561472034B3AA00EEABB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEF5610F2034B3A900EEABB1 /* Project object */;
+}
