@@ -9,7 +9,12 @@
 import UIKit
 
 class Question: UITableViewCell {
-
+    
+    //MARK:Properties
+    
+   @IBOutlet weak var questionLabel: UILabel!
+   @IBOutlet weak var questionResponse: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +24,9 @@ class Question: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
     }
+    
+    //MARK:Private methods
 
 }

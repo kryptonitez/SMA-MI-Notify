@@ -19,6 +19,7 @@ var response: String
     
     init?(question: String, response: String) {
     // Initialization should fail if there is no question
+        
         if question.isEmpty {
             return nil
         }

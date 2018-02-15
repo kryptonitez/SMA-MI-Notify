@@ -9,6 +9,9 @@
 import UIKit
 
 class QuestionTableViewController: UITableViewController {
+    
+    //MARK: Properties
+    var questions = [FormData]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,10 @@ class QuestionTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+
+        
+        
+        loadQuestions()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,24 +35,28 @@ class QuestionTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+   
+        return questions.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cellIdentifier = "QuestionTableViewCell"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? Question else {
+            fatalError("The dequeued cell is not an instance of QuestionCEll")
+        }
+        let formdata = questions[indexPath.row]
+        
+        cell.questionLabel.text = formdata.question
+        cell.questionResponse.text = "                sdasdsa     sdasda \n dsasdsad \n"
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,5 +102,21 @@ class QuestionTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: Private Methods
+    
+    private func loadQuestions() {
+        
+        guard let question1 = FormData(question: "question 1", response: "placeholder text") else {
+            fatalError("Unable to instantiate question1")
+        }
+        
+        guard let question2 = FormData(question: "question 2", response: "placeholder text") else {
+            fatalError("Unable to instantiate question2")
+        }
+        
+        questions += [question1, question2]
+        
+    }
 
 }
