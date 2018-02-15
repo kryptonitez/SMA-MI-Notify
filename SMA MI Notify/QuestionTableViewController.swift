@@ -47,13 +47,13 @@ class QuestionTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "QuestionTableViewCell"
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? Question else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? QuestionTableViewCell else {
             fatalError("The dequeued cell is not an instance of QuestionCEll")
         }
         let formdata = questions[indexPath.row]
         
         cell.questionLabel.text = formdata.question
-        cell.questionResponse.text = "                sdasdsa     sdasda \n dsasdsad \n"
+        cell.configure(height: 150, width: 150)
         return cell
     }
     

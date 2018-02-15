@@ -14,7 +14,7 @@
 		FEF561302034B3A900EEABB1 /* SMA_MI_NotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5612F2034B3A900EEABB1 /* SMA_MI_NotifyTests.swift */; };
 		FEF5613B2034B3AA00EEABB1 /* SMA_MI_NotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5613A2034B3AA00EEABB1 /* SMA_MI_NotifyUITests.swift */; };
 		FEF561492034DBDA00EEABB1 /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF561482034DBDA00EEABB1 /* FormData.swift */; };
-		FEF5614B2034DF9100EEABB1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5614A2034DF9100EEABB1 /* Question.swift */; };
+		FEF5614B2034DF9100EEABB1 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5614A2034DF9100EEABB1 /* QuestionTableViewCell.swift */; };
 		FEF5614D2034E22900EEABB1 /* QuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5614C2034E22900EEABB1 /* QuestionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,7 @@
 		FEF5613A2034B3AA00EEABB1 /* SMA_MI_NotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMA_MI_NotifyUITests.swift; sourceTree = "<group>"; };
 		FEF5613C2034B3AA00EEABB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF561482034DBDA00EEABB1 /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
-		FEF5614A2034DF9100EEABB1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		FEF5614A2034DF9100EEABB1 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		FEF5614C2034E22900EEABB1 /* QuestionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +101,7 @@
 		FEF561192034B3A900EEABB1 /* SMA MI Notify */ = {
 			isa = PBXGroup;
 			children = (
-				FEF5614A2034DF9100EEABB1 /* Question.swift */,
+				FEF5614A2034DF9100EEABB1 /* QuestionTableViewCell.swift */,
 				FEF561482034DBDA00EEABB1 /* FormData.swift */,
 				FEF5611A2034B3A900EEABB1 /* AppDelegate.swift */,
 				FEF5611E2034B3A900EEABB1 /* Main.storyboard */,
@@ -265,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF5614B2034DF9100EEABB1 /* Question.swift in Sources */,
+				FEF5614B2034DF9100EEABB1 /* QuestionTableViewCell.swift in Sources */,
 				FEF5614D2034E22900EEABB1 /* QuestionTableViewController.swift in Sources */,
 				FEF5611B2034B3A900EEABB1 /* AppDelegate.swift in Sources */,
 				FEF561492034DBDA00EEABB1 /* FormData.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Question: UITableViewCell {
+class QuestionTableViewCell: UITableViewCell {
     
     //MARK:Properties
     
@@ -28,5 +28,8 @@ class Question: UITableViewCell {
     }
     
     //MARK:Private methods
+    public func configure(height: Int, width: Int) {
+        questionResponse = UITextView.init(frame: CGRect(x: 0, y: 0, width: width, height: height))
+    }
 
 }
