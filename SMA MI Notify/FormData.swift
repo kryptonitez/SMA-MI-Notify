@@ -15,6 +15,7 @@ class FormData {
 var question: String
 var response: String
     
+    
     //MARK: Initialization
     
     init?(question: String, response: String) {
@@ -26,5 +27,9 @@ var response: String
         self.question = question
         self.response = response
     }
+    
+    //MARK: Public custom methods
+
+    
 
 }

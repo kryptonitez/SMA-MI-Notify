@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEC-Ip-sjn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zVc-j1-spw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Question Table View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="KgB-e0-3f2">
+            <objects>
+                <navigationController id="zVc-j1-spw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ReS-zV-QOA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kPe-y6-X7T" kind="relationship" relationship="rootViewController" id="G0g-bg-hTY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oOz-xH-dbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="156"/>
+        </scene>
+        <!--QuestionTableViewController-->
         <scene sceneID="TSF-Z8-Wt0">
             <objects>
-                <tableViewController id="qEC-Ip-sjn" customClass="QuestionTableViewController" customModule="SMA_MI_Notify" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="qEC-Ip-sjn" userLabel="QuestionTableViewController" customClass="QuestionTableViewController" customModule="SMA_MI_Notify" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vFe-CQ-nLd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +55,9 @@
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" placeholderIntrinsicWidth="359" placeholderIntrinsicHeight="233" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bqO-G1-NLH" userLabel="QuestionResponse">
                                                     <rect key="frame" x="0.0" y="20.5" width="359" height="233"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="bqO-G1-NLH" secondAttribute="height" multiplier="359:233" id="RPt-OG-X0e"/>
+                                                    </constraints>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
@@ -62,10 +83,67 @@
                             <outlet property="delegate" destination="qEC-Ip-sjn" id="6zo-tz-Sa0"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Jg5-Vg-NoQ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e65-FB-31T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1216.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2554" y="155"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="77C-ox-uTE">
+            <objects>
+                <viewController id="kPe-y6-X7T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fCN-MM-NVb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsQ-dX-lfw">
+                                <rect key="frame" x="97" y="483" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="EM Incident meeting"/>
+                                <connections>
+                                    <action selector="question1:" destination="f3N-iT-lmC" eventType="touchUpInside" id="poZ-4e-oCw"/>
+                                    <segue destination="qEC-Ip-sjn" kind="show" id="C7D-Wx-V00"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-we-ZfG">
+                                <rect key="frame" x="97" y="548" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="MI update"/>
+                                <connections>
+                                    <action selector="question2:" destination="f3N-iT-lmC" eventType="touchUpInside" id="8wX-1Z-gx6"/>
+                                    <segue destination="qEC-Ip-sjn" kind="show" id="dJV-x2-Rgg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps0-g9-Gf4">
+                                <rect key="frame" x="97" y="610" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="MI Management update"/>
+                                <connections>
+                                    <action selector="question3:" destination="f3N-iT-lmC" eventType="touchUpInside" id="Xre-4T-BoM"/>
+                                    <segue destination="qEC-Ip-sjn" kind="show" id="D3b-oh-Bvc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SMA_Logo_RGB_180x180_B" translatesAutoresizingMaskIntoConstraints="NO" id="Fa1-YT-8uU">
+                                <rect key="frame" x="179" y="64" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.2901960784" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="hMD-4r-uk0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zk4-n9-G5P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfL-ZJ-iAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="f3N-iT-lmC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1485.5999999999999" y="154.27286356821591"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SMA_Logo_RGB_180x180_B" width="180" height="180"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="C7D-Wx-V00"/>
+    </inferredMetricsTieBreakers>
 </document>

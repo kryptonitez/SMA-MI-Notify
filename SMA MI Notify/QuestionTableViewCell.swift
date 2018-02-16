@@ -8,16 +8,18 @@
 
 import UIKit
 
-class QuestionTableViewCell: UITableViewCell {
+class QuestionTableViewCell: UITableViewCell, UITextViewDelegate {
     
     //MARK:Properties
-    
+  
    @IBOutlet weak var questionLabel: UILabel!
    @IBOutlet weak var questionResponse: UITextView!
+    var placeholdertext = "true"
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        questionResponse.delegate = self
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -26,10 +28,12 @@ class QuestionTableViewCell: UITableViewCell {
         // Configure the view for the selected state
         
     }
-    
-    //MARK:Private methods
-    public func configure(height: Int, width: Int) {
-        questionResponse = UITextView.init(frame: CGRect(x: 0, y: 0, width: width, height: height))
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if (placeholdertext == "true"){
+        questionResponse.textColor = UIColor.black
+        questionResponse.text = "";
+        placeholdertext = "false"
+        }
     }
 
 }

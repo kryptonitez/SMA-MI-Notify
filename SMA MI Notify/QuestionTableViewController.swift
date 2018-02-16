@@ -11,7 +11,9 @@ import UIKit
 class QuestionTableViewController: UITableViewController {
     
     //MARK: Properties
-    var questions = [FormData]()
+   var questions = [FormData]()
+    var stringPassed = ""
+    var stringPAssedTest = "emergency management update"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +23,9 @@ class QuestionTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+      // stringPassed = stringPAssedTest
+        loadQuestions(questionvaluetoload: stringPassed)
 
-        
-        
-        loadQuestions()
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,10 +54,12 @@ class QuestionTableViewController: UITableViewController {
         let formdata = questions[indexPath.row]
         
         cell.questionLabel.text = formdata.question
-        cell.configure(height: 150, width: 150)
+        cell.questionResponse.text = "Enter your response here"
+        cell.questionResponse.textColor = UIColor.lightGray
+        
         return cell
     }
-    
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -105,18 +108,62 @@ class QuestionTableViewController: UITableViewController {
     
     //MARK: Private Methods
     
-    private func loadQuestions() {
+    private func loadQuestions(questionvaluetoload: String) {
+        let questionValueToLoad:String = questionvaluetoload
         
-        guard let question1 = FormData(question: "question 1", response: "placeholder text") else {
-            fatalError("Unable to instantiate question1")
+        switch questionValueToLoad {
+            case "emergency management update":
+           // Load questions
+                guard let question1 = FormData(question: "Incident Description (summary): ", response: "placeholder text") else {
+                    fatalError("Unable to instantiate question1")
+                }
+                
+                guard let question2 = FormData(question: "Impacted services:", response: "placeholder text") else {
+                    fatalError("Unable to instantiate question2")
+                }
+                
+                guard let question3 = FormData(question: "Impacted locations or units:", response: "placeholder text") else {
+                    fatalError("Unable to instantiate question2")
+            }
+             questions += [question1, question2, question3]
+        case "emergency global update":
+            //Load question
+            
+            guard let question1 = FormData(question: "Incident Description (summary): ", response: "placeholder text") else {
+                fatalError("Unable to instantiate question1")
+            }
+            
+            guard let question2 = FormData(question: "Impacted services:", response: "placeholder text") else {
+                fatalError("Unable to instantiate question2")
+            }
+            
+            guard let question3 = FormData(question: "Impacted locations or units:", response: "placeholder text") else {
+                fatalError("Unable to instantiate question2")
+            }
+             questions += [question1, question2, question3]
+            
+        case "emergency meeting update":
+            //Load question
+            
+            guard let question1 = FormData(question: "Incident Description (summary): ", response: "placeholder text") else {
+                fatalError("Unable to instantiate question1")
+            }
+            
+            guard let question2 = FormData(question: "Impacted services:", response: "placeholder text") else {
+                fatalError("Unable to instantiate question2")
+            }
+            
+            guard let question3 = FormData(question: "Impacted locations or units:", response: "placeholder text") else {
+                fatalError("Unable to instantiate question2")
+            }
+            questions += [question1, question2, question3]
+            
+            default:
+            //load question
+                guard let question1 = FormData(question: "default ", response: "placeholder text") else {
+                    fatalError("Unable to instantiate question1")
+            }
+            questions += [question1]
         }
-        
-        guard let question2 = FormData(question: "question 2", response: "placeholder text") else {
-            fatalError("Unable to instantiate question2")
-        }
-        
-        questions += [question1, question2]
-        
     }
-
 }
